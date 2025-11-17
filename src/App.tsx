@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Header from './components/header/Header';
+import Banner from './components/banner/Banner';
+import Brands from './components/brands/Brands';
+import Features from './components/features/Features';
+import Rewards from './components/rewards/Rewards';
+import Cta from './components/cta/Cta';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <Header/>
+        <Banner/>
+        <Brands/>
+        <Features/>
+        <Rewards/>
+        <Cta/>
+      </div>
     </div>
   );
 }

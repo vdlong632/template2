@@ -1,0 +1,19 @@
+.brands {
+    text-align: center;
+    padding: 4rem 0;
+
+
+    p {
+        display: inline-block;
+        font-size: 0.8em;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        font-size: 1em;
+        font-weight: 500;
+        padding: 0;
+    }
+}

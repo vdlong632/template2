@@ -1,0 +1,73 @@
+.banner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    position: relative;
+    padding: 2rem 0;
+
+
+    .banner__content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 50%;
+        position: relative;
+        z-index: 2;
+        overflow: visible;
+
+        h1 {
+            font-size: 2.65rem;
+            font-weight: 700;
+            line-height: 1.2;
+            padding: 0;
+        }
+
+        p {
+            font-size: 0.75rem;
+            line-height: 1.6;
+            max-width: 70%;
+        }
+
+        .contents__buttons {
+            display: flex;
+            gap: 1.5em;
+            padding: 1.5em 0;
+        
+            .btn--download {
+                width: 8rem;
+                height: 3rem;
+                background: #0328EE;
+                border-radius: 80px;
+                color: white;
+                font-size: 0.7em;
+                border: none;
+            }
+
+            .btn--view {
+                width: 7.5rem;
+                height: 3rem;
+                background: #FFFFFF1A;
+                color: white;
+                border-radius: 80px;
+                border: none;
+                font-size: 0.7em
+            }
+        }
+    }
+
+    .banner__img {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: calc((98.8vw - 100%) / -2);
+
+        pointer-events: none;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+}

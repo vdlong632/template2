@@ -1,0 +1,97 @@
+.features {
+    margin: 0;
+    padding: 0;
+    gap: 1em;
+    width: 100%;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            text-align: center;
+            font-size: 2em;
+        }
+
+        p {
+            width: 32%;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 0.8em;
+            line-height: 2;
+        }
+
+    }
+
+    .features__grid {
+        display: grid;
+        grid-template-columns: 1fr 1.3fr 1fr;
+        gap: 1.3em;
+        grid-template-rows: 1fr 1fr;
+        /* Mỗi hàng có chiều cao bằng nhau */
+        align-items: stretch;
+        /* Căng các item cho cùng chiều cao */
+        justify-items: center;
+        padding: 4em 0 2em 0;
+
+        .feature-card {
+            background-color: #010725;
+            border-radius: 25px;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            padding-top: 2em;
+            padding-left: 1.7em;
+
+            .features-icon {
+                width: 4.25em;
+                height: 4.25em;
+                border: 5px solid red;
+            }
+
+            h3 {
+                margin-top: 1em;
+                margin-bottom: 0;
+            }
+
+            p {
+                font-size: 0.8em;
+                line-height: 2.3;
+                width: 80%;
+                padding-top: 0;
+            }
+
+        }
+
+        .feature-card--center {
+            grid-column: 2;
+            grid-row: 1 / span 2;
+            background-color: #0040FF;
+            align-items: center;
+            padding: 0;
+
+            p {
+                width: 75%;
+            }
+
+            img {
+                width: 84%;
+                height: auto;
+                position: relative;
+                right: 0.3em;
+            }
+        }
+    }
+
+    button {
+        width: 8rem;
+        height: 3rem;
+        background: #0328EE;
+        border-radius: 80px;
+        color: white;
+        font-size: 0.7em;
+        border: none;
+        margin: 0 auto;
+        display: block;
+    }
+}
