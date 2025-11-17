@@ -1,6 +1,6 @@
 .features {
     margin: 0;
-    padding: 0;
+    padding: 2.5em 0;
     gap: 1em;
     width: 100%;
 
@@ -40,8 +40,9 @@
             color: #fff;
             display: flex;
             flex-direction: column;
-            padding-top: 2em;
-            padding-left: 1.7em;
+            padding-top: 3em;
+            padding-left: 2.5em;
+            gap: 1em;
 
             .features-icon {
                 width: 4.25em;
@@ -125,6 +126,9 @@
             .feature-card{
                 gap: 0.7em;
                 padding: 3em 2em;
+                h3 {
+                    font-size: 1.5em;
+                }
             }
             .feature-card--center {
                 padding-bottom: 0 !important;
