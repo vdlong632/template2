@@ -7,7 +7,8 @@ const Header = () => {
                 <div className='header__navigation'>
                     <div className="header__logo">
                         <img src={logo} alt=""/>
-                        <span>FinanceFlow</span>
+                        <span className="pc__logo">FinanceFlow</span>
+                        <span className="mobile__logo">Crypto</span>
                     </div>
                     <nav className="header__nav">
                         <ul className="nav__list">
@@ -20,7 +21,8 @@ const Header = () => {
                         </ul>
                     </nav>
                 </div>
-                <button>DOWNLOAD APP</button>
+                <button className="btn-download">DOWNLOAD APP</button>
+                <button className="btn-toggle">☰</button>
             </div>
         </header >
     )

@@ -1,4 +1,5 @@
 import AppleComputers from './AppleComputers.png'
+import Laptop from './Laptop.png'
 import './Banner.scss'
 const Banner = () => {
     return (
@@ -14,6 +15,9 @@ const Banner = () => {
 
             <div className='banner__img'>
                 <img src={AppleComputers} alt="" />
+            </div>
+            <div className="banner__img__mobile">
+                <img src={Laptop} alt=""/>
             </div>
         </section>
     )

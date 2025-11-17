@@ -11,9 +11,30 @@
     ul {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
         list-style: none;
         font-size: 1em;
         font-weight: 500;
         padding: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .brands {
+        padding: 2.5em 0;
+
+    p {
+      font-size: 0.85rem;
+      margin-bottom: 1em;
+    }
+
+    ul {
+      gap: 0.5em;
+      li {
+        font-size: 1.5em;
+        max-width: 90%;
+        padding: 0.1em 1em;
+      }
+    }
     }
 }

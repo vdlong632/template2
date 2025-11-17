@@ -64,27 +64,32 @@
         }
 
         .feature-card--center {
+            display: flex;
             grid-column: 2;
             grid-row: 1 / span 2;
             background-color: #0040FF;
-            align-items: center;
-            padding: 0;
+            // align-items: center;
+            text-align-last: left;
+            padding-top: 2em;
+            padding-left: 2.4em;
+            
+            
 
             p {
                 width: 75%;
             }
 
             img {
-                width: 84%;
-                height: auto;
-                position: relative;
-                right: 0.3em;
+                width: 85%;
+                // height: auto;
+                // position: relative;
+                // // right: 0.3em;
             }
         }
     }
 
     button {
-        width: 8rem;
+        width: 10rem;
         height: 3rem;
         background: #0328EE;
         border-radius: 80px;
@@ -93,5 +98,46 @@
         border: none;
         margin: 0 auto;
         display: block;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .features {
+        padding: 0 0 4em 0;
+        .content {
+            gap: 1em;
+            h2, p {
+                text-align: left;
+                margin: 0;
+                max-width: 80%;
+                width: 75%
+            }
+            h2{
+                font-size: 1.5em;
+            }
+        }
+
+        .features__grid {
+            display: flex;
+            flex-direction: column;
+
+            .feature-card{
+                gap: 0.7em;
+                padding: 3em 2em;
+            }
+            .feature-card--center {
+                padding-bottom: 0 !important;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+        .btn--download{
+            width: 45%
+        }
+
     }
 }

@@ -26,6 +26,14 @@ header {
                 display: flex;
                 align-items: center;
                 gap: 8%;
+
+                .pc__logo {
+                    display: block;
+                }
+
+                .mobile__logo {
+                    display: none;
+                }
             }
 
             .header__nav {
@@ -47,7 +55,7 @@ header {
         }
 
 
-        button {
+        .btn-download {
             width: 14%;
             height: 92%;
             color: white;
@@ -57,13 +65,47 @@ header {
             font-size: 0.75em;
             font-weight: 550;
         }
+        .btn-toggle {
+            width: 45px;
+            height: 45px;
+            font-size: 1.5em;
+            display: none;
+            border-radius: 50%;
+            background: #0328EE;
+            color: white;
+            border: none;
+        }
     }
 }
 
 @media (max-width: 400px) {
-    header {
-        ul {
-            display: none;
+    .container {
+        padding: 1.5em 0;
+        .header__navigation {
+            .header__logo {
+                img {
+                    width: 40%;
+                }
+                .pc__logo {
+                    display: none !important
+                }
+
+                .mobile__logo {
+                    display: block !important;
+                    font-size: 1.5em;
+                    font-weight: 650;
+                }
+            }
+
+            .header__nav {
+                display: none;
+            }
         }
+    }
+    .btn-download {
+        display: none;
+    }
+    .btn-toggle {
+        display: block !important
     }
 }
