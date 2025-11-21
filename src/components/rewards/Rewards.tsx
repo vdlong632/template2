@@ -1,6 +1,7 @@
 import './Rewards.scss';
 import Group2 from './Group2.png';
 import AppleComputers2 from './AppleComputers2.png';
+import Laptop from './Laptop.png'
 
 const Rewards = () => {
     return (
@@ -65,6 +66,12 @@ const Rewards = () => {
                     <img
                         src={AppleComputers2}
                         alt="Crypto app interface on phone"
+                    />
+                </div>
+                <div className="rewards__mobile">
+                    <img
+                    src={Laptop}
+                    alt=""
                     />
                 </div>
             </section>

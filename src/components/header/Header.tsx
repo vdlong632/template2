@@ -3,7 +3,7 @@ import logo from '../header/logo.png';
 const Header = () => {
     return (
         <header>
-            <div className="container">
+            <div className="outline">
                 <div className='header__navigation'>
                     <div className="header__logo">
                         <img src={logo} alt=""/>

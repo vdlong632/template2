@@ -17,7 +17,7 @@
             width: 32%;
             margin: 0 auto;
             text-align: center;
-            font-size: 0.8em;
+            font-size: 0.9em;
             line-height: 2;
         }
 
@@ -35,14 +35,18 @@
         padding: 4em 0 2em 0;
 
         .feature-card {
-            background-color: #010725;
+            background-color: #010D50;
             border-radius: 25px;
             color: #fff;
             display: flex;
             flex-direction: column;
             padding-top: 3em;
-            padding-left: 2.5em;
+            padding-left: 2.3em;
             gap: 1em;
+
+            @media (max-width: 1024px){
+                padding-top: 1em;
+            }
 
             .features-icon {
                 width: 4.25em;
@@ -57,7 +61,7 @@
 
             p {
                 font-size: 0.8em;
-                line-height: 2.3;
+                line-height: 2;
                 width: 80%;
                 padding-top: 0;
             }
@@ -102,8 +106,53 @@
     }
 }
 
+// @media (max-width: 1200px){
+//     .features{
+//         .features__grid {
+//             .feature-card {
+//                 padding-top: 1em;
+//                 padding-left: 1.5em;
+//                 gap: 0;
+//             }
+//         }
+//     }
+// } 
+@media (max-width: 945px){
+    .features{
+        .features__grid {
+            .feature-card {
+                padding-top: 1em;
+                padding-left: 1em;
+                gap: 0em;
+            }
+        }
+    }
+}
+@media (max-width: 900px){
+    .features{
+        .features__grid {
+            .feature-card {
+                padding-top: 0.5em;
+                padding-left: 0.5em;
+                gap: 0.1em;
+            }
+        }
+    }
+} 
 
-@media (max-width: 400px) {
+@media (max-width: 768px){
+    .features{
+        .features__grid {
+            .feature-card {
+                padding-top: 1em;
+                padding-left: 1.5em;
+                gap: 0;
+            }
+        }
+    }
+} 
+
+@media (max-width: 576px) {
     .features {
         padding: 0 0 4em 0;
         .content {
@@ -133,8 +182,9 @@
             .feature-card--center {
                 padding-bottom: 0 !important;
                 img {
-                    width: 100%;
+                    width:90%;
                     height: auto;
+                    margin: 0 auto
                 }
             }
         }
@@ -142,6 +192,5 @@
         .btn--download{
             width: 45%
         }
-
     }
 }

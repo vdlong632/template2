@@ -1,0 +1,67 @@
+.slider {
+    // background: #000c4e;
+    color: #fff;
+    text-align: center;
+    padding: 5rem 1em;
+    position: relative;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    width: 100vw;
+
+    .heading {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+            margin: 0
+        }
+
+        .btn--download {
+            width: 15%;
+            height: 7vh;
+            color: white;
+            border-radius: 80px;
+            background: #0328EE;
+            border: none;
+
+        }
+    }
+
+    .slider__wrapper {
+        display: flex;
+        gap: 2rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        padding: 2rem;
+        width: 90%;
+        margin: 0 auto;
+
+        .slider__wrapper:-webkit-scrollbar {
+            display: none;
+        }
+
+        .slide {
+            flex: 0 0 40%;
+            background: #000c4e;
+
+            border-radius: 20px;
+            padding: 2rem;
+            scroll-snap-align: center;
+            transition: all 0.5s ease;
+            filter: brightness(0.5);
+            /* mờ mặc định */
+            transform: scale(0.95);
+            opacity: 0.7;
+        }
+
+        .slide:target,
+        .slide.active {
+            filter: brightness(1);
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+}
